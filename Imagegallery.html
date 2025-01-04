@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+            
+        }
+
+        header {
+            background-color: #344038;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            padding: 40px 20px;
+            text-align: center;
+            
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .albums {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .album {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 220px;
+            text-align: center;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        .album img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        a{
+            text-decoration: none;
+        }
+        .album img:hover {
+            transform: scale(1.1);
+        }
+
+        .album p {
+            margin-top: 15px;
+            font-size: 1.1em;
+            color: #343a40;
+        }
+
+        .album:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .gallery img {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #dee2e6;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .album, .gallery img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
+
+    <main>
+        <h2>Albums</h2>
+        <section class="albums">
+            <div class="album">
+                <a href="demo.html">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d" alt="Friends">
+                    <p>Friends</p>
+                </a>
+            </div>
+            <div class="album">
+                <a href="gallerypage2.html">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Snapchat">
+                    <p>Snapchat</p>
+                </a>
+            </div>
+            <div class="album">
+                <a href="gallerypage3.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp7IhV4JSboQa43b-Vq88vzqe4hW60tMmwh3hNkimVKLl32QS1whaMJeenqpa1KwUEw0o&usqp=CAU" alt="God">
+                    <p>God</p>
+                </a>
+            </div>
+            <div class="album">
+                <a href="gallerypage4.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB40yF979E0__Wx_ogfio02oSCPxorL-1JGeobA0tEMNKnyUqack27FUvQ971ZqUXDgA8&usqp=CAU" alt="Prize">
+                    <p>Prize</p>
+                </a>
+            </div>
+            <div class="album">
+                <a href="gallerypage5.html">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Outing">
+                    <p>Outing</p>
+                </a>
+            </div>
+            <div class="album">
+                <a href="gallerypage6.html">
+                    <img src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/65a36fe63024b7001da93ad1.jpg" alt="Pongal Celebration">
+                    <p>Pongal Celebration</p>
+                </a>
+            </div>
+        </section>
+
+        <h2>Gallery</h2>
+        <section class="gallery">
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Sample Image 1">
+            <img src="puzzb.jpg" alt="Sample Image 2">
+            <img src="ff.jpg" alt="Sample Image 3">
+            <img src="puzzleb.jpg" alt="Sample Image 4">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Photo Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
