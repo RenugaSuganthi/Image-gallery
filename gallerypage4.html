@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prize Album</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .gallery img {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #dee2e6;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #343a40;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Prize Album</h1>
+    </header>
+
+    <main>
+        <h2>Photo Gallery</h2>
+        <section class="gallery">
+            <img src="https://media.istockphoto.com/photos/trophy-on-a-gold-background-picture-id1336886914?b=1&k=20&m=1336886914&s=612x612&w=0&h=l14ZVvhhTkB6z5K_V0XIPNmM6Xww_Vmu5WSRja2LHHI=" alt="Prize Image 1">
+            <img src="https://media.istockphoto.com/photos/golden-trophy-award-cup-for-champion-winner-picture-id1332182827?b=1&k=20&m=1332182827&s=612x612&w=0&h=NWJ1-Xqzjxhy_wzLg0ZPfs8ZGBPYzv1m1Hi1yZjYjcI=" alt="Prize Image 2">
+            <img src="https://media.istockphoto.com/photos/successful-win-concept-golden-trophy-with-sky-picture-id1336057986?b=1&k=20&m=1336057986&s=612x612&w=0&h=sNj3-5bxkaI6ghTmhI-8j8izTWGq9xtHKO9RD5D_uFg=" alt="Prize Image 3">
+            <img src="https://media.istockphoto.com/photos/success-and-win-concept-golden-trophy-isolated-on-dark-background-picture-id1330650250?b=1&k=20&m=1330650250&s=612x612&w=0&h=YWJcng_0mnzy2OYPy76pDgviNJe0UO8Nh4nXaXJ6LMk=" alt="Prize Image 4">
+            <img src="https://media.istockphoto.com/photos/trophy-on-a-table-picture-id1307340226?b=1&k=20&m=1307340226&s=612x612&w=0&h=htklI1x-VxRxZbiwfiOZVZXLfWWKEXg5I2t1-Y37Ox4=" alt="Prize Image 5">
+            <img src="https://media.istockphoto.com/photos/trophy-cup-picture-id1323902181?b=1&k=20&m=1323902181&s=612x612&w=0&h=Hd-wMe5F4gYzLTyq_uCnMi_vW-Izkbd4sdUeoeOMp1U=" alt="Prize Image 6">
+            <!-- Add more images as needed -->
+        </section>
+        <a href="Renuga_imagegallery.html" class="back-button">Back to Albums</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Photo Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

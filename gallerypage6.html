@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God Album</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .gallery img {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #dee2e6;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #343a40;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pongal Celebration album</h1>
+    </header>
+
+    <main>
+        <h2>Photo Gallery</h2>
+        <section class="gallery">
+            <img src="https://media.istockphoto.com/photos/statue-of-the-hindu-god-shiva-india-picture-id1299240022?b=1&k=20&m=1299240022&s=612x612&w=0&h=V3vAAh_MQUZ5GSyDdXZ_JRtup3t8s2dEZyyHcIzQ3mE=" alt="God Image 1">
+            <img src="https://media.istockphoto.com/photos/statue-of-lord-shiva-picture-id1335640915?b=1&k=20&m=1335640915&s=612x612&w=0&h=MNJRL0L7Myc6v__M9ATv5pC1nE2LEgdDqQOjEVSPCkU=" alt="God Image 2">
+            <img src="https://media.istockphoto.com/photos/stone-carving-in-indian-temple-picture-id180921315?b=1&k=20&m=180921315&s=612x612&w=0&h=H7IdC1u3eJz2VGkMQW-H3Swsc-b0EE-V3Jys_pDA-D0=" alt="God Image 3">
+            <img src="https://media.istockphoto.com/photos/sand-sculpture-of-lord-ganesha-picture-id1342119562?b=1&k=20&m=1342119562&s=612x612&w=0&h=tONhsX6Z2uwR1fGoW4IpMW4XP-TEnE4GF6DCyAY1Omg=" alt="God Image 4">
+            <img src="https://media.istockphoto.com/photos/indian-hindu-god-idol-lord-shiva-and-shiv-ling-picture-id1283442737?b=1&k=20&m=1283442737&s=612x612&w=0&h=O5-UygmUOGo6TOJ94z5w-FowUl12EoPaFqsmw_Eyl5M=" alt="God Image 5">
+            <img src="https://media.istockphoto.com/photos/idol-of-hindu-god-kartikeya-in-traditional-tilak-pose-picture-id1337304573?b=1&k=20&m=1337304573&s=612x612&w=0&h=XYTh7udvGd-6H1QuGmOT88mhYg-jFbOTaW9miSaVW4I=" alt="God Image 6">
+            <!-- Add more images as needed -->
+        </section>
+        <a href="Renuga_imagegallery.html" class="back-button">Back to Albums</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Photo Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
